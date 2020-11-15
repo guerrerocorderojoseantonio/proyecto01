@@ -1,0 +1,2 @@
+ #PROYECTO PRIMERA EVALUACIÓN
+ En este proyecto vamos a crear una coleccion, en mi caso la he llamado ordenadores ya que los documentos que la crean tratan de ordenadores y los componentes que los forman, la estructura será la misma de siempre, una carpeta src para los .js y una carpeta docs para almacenar el documento pdf donde desarrollaremos el proyecto 
