@@ -14,3 +14,9 @@ db.ordenadores.find({ram:{$lt:8}})
 db.ordenadores.find({"procesador.modelo":{$nin:["i3", "ryzen3" ]}})
 //Equipos intel que no sean de la familia i-x
 db.ordenadores.find({"procesador.marca": "intel", "procesador.modelo": { $not: /^i/ }})
+//Equipos con menos o ram igual a 8 y los de 16
+db.ordenadores.find({ $or:[{ram:{$lte:8}}, {ram:{$eq:12}}]})
+//Equipos con un procesador i5 o i3
+db.ordenadores.find( { "procesador.modelo": { $in: [ "i5", "i3" ] } } )
+//Equipos con un nombre diferente al resto
+db.ordenadores.find({ nombre: {$not : /^pc-[0-9]/ }})
