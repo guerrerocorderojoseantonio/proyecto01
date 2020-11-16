@@ -17,4 +17,4 @@ db.ordenadores.insertMany([
     { nombre: "pc-15", ram: 6, procesador: { marca: "intel", modelo: "i3", nucleos: 2 }, teclado : true , raton: true}
  ]);
  //A CONTINUACIÓN VAMOS A INSERTAR OTRO DOCUMENTO PARA REALIZAR UNAS CONSULTAS DETERMINADAS
- db.ordenadores.insert0ne({ nombre: "pc-profesor", ram: 8, procesador: { marca: "amd", modelo: "threadripper", nucleos: 16}, teclado:true, raton:false})
+ db.ordenadores.insertOne({ nombre: "pc-profesor", ram: 8, procesador: { marca: "amd", modelo: "threadripper", nucleos: 16}, teclado:true, raton:false})
