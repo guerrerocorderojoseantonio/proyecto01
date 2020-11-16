@@ -1,6 +1,6 @@
 //Equipos con intel
 db.ordenadores.find({"procesador.marca" : "intel"})
-//Equipos con raton
+//Equipos con teclado
 db.ordenadores.find({teclado:true})
 //Equipos que empiecen por pc-1X
 db.ordenadores.find({nombre: {$regex : /^pc-1/ }})
